@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+:root {
+    --black: #28282a;
+}
+
 html {    
     font-size: 62.5%;
     font-family: "roboto", sans-serif;
@@ -14,4 +18,27 @@ html {
 body {
     box-sizing: border-box;
     font-size: 1.6rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    border-bottom: 1px solid var(--black);
+}
+
+.nav_link {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.nav_items {
+    list-style-type: none;
 }
